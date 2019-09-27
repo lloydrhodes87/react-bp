@@ -1,9 +1,11 @@
 import React from 'react';
+import ChildTwo from './ChildTwo';
 
-const Child = () => {
+const Child = (props) => {
+   const { alert } = props; 
     return (
         <div>
-            <p>This is a child component</p>
+           <ChildTwo alert={alert}/> 
         </div>
     );
 };

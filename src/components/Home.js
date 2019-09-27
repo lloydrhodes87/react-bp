@@ -6,10 +6,15 @@ class Home extends Component {
         return (
             <div>
                 <h1>Welcome</h1>
-                <Child />
+                <Child alert={this.alert}/>
             </div>
         );
     }
+
+    alert = () => {
+        alert('hello')
+    }
 }
+
 
 export default Home;
