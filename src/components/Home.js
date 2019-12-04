@@ -1,15 +1,23 @@
-import React, { Component } from 'react';
-import Child from './child';
+import React from 'react';
+import Applicants from './Applicants';
+import MortgageRequirements from './MortgageRequirements';
+import { ButtonContent } from 'semantic-ui-react';
+import ExistingMortgages from './ExistingMortgages';
+import useLocalStorage from 'react-use-localstorage';
+import PropertyToBeMortgaged from './PropertyToBeMortgaged';
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Welcome</h1>
-                <Child />
-            </div>
-        );
-    }
-}
+const Home = () => {
+    
+    
+    return (
+        <div>
+            <MortgageRequirements />
+            <ExistingMortgages />
+            <Applicants/>
+            <PropertyToBeMortgaged />
+        </div>
+    );
+};
 
 export default Home;
+
